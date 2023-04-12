@@ -94,7 +94,7 @@ https://github.com/wangyu-/udp2raw-tunnel/releases
 ### 提醒
 `--cipher-mode xor`表示仅使用简单的XOR加密，这样可以节省CPU占用，以免CPU成为速度瓶颈。如果你需要更强的加密，可以去掉此选项，使用默认的AES加密。加密相关的选项见后文的`--cipher-mode`和`--auth-mode`。
 
-如果要在anroid上运行，请看[Android简明教程](/doc/android_guide.md)
+如果要在Android上运行，请看[Android简明教程](/doc/android_guide.md)
 
 `-a`选项会自动添加一条/几条iptables规则，udp2raw必须和相应的iptables规则配合才能稳定工作，一定要注意不要忘了`-a`(这是个常见错误)。 如果你不想让udp2raw自动添加iptables规则，可以自己手动添加相应的iptables规则(看一下`-g`选项)，然后以不带`-a`的方式运行udp2raw。
 
